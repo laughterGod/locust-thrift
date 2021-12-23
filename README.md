@@ -3,7 +3,7 @@
 
 Step1：下载/拉取代码库
 ```
-git clone https://github.com/wangzhe0912/locust-thrift.git
+git clone https://github.com/laughterGod/locust-thrift.git
 ```
 
 Step2：安装相关依赖库
@@ -24,7 +24,7 @@ Step4：启动Locust压测服务：
 export PYTHONPATH=`pwd`
 ```
 ```
-locust -f locust_thrift/tests/ping_pong.py
+locust -f locust_thrift/tests/test_press.py
 ```
 
 Step5：打开浏览器，访问localhost:8089端口。
