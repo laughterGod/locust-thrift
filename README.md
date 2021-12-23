@@ -13,24 +13,19 @@ pip install -r requirements.txt
 
 Step3：启动模拟待测服务（演示时使用，正常压测其他待测服务时，无需启动Server）
 ```
-export PYTHONPATH=`pwd`
-```
-```
-python locust_thrift/server.py
+python3 server.py
 ```
 
 Step4：启动Locust压测服务：
 ```
-export PYTHONPATH=`pwd`
-```
-```
-locust -f locust_thrift/tests/test_press.py
+python3 test_press.py
 ```
 
-Step5：打开浏览器，访问localhost:8089端口。
+Step5：打开浏览器，访问http://ip:8089/
+例如：http://10.96.114.24:8089/
 
 输入并发数目和每秒启动并发数后，即正常开始压测。
 
 Ps：那么我们应该如何对一个新的待测服务进行压测呢？
-主要是编写tests下的测试脚本文件即可。
+主要是编写test_press.py即可
 
