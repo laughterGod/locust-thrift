@@ -3,9 +3,9 @@
 import csv
 import os
 import json
-from locust_thrift import settings
 import time
 import functools
+import settings
 
 
 def gen_loop_csv_reader(relative_csv_filename, register=None):
