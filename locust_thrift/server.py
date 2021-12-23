@@ -6,8 +6,7 @@
 import thriftpy
 from thriftpy.rpc import make_server
 import os
-from locust_thrift.settings import ROOT_PATH
-
+from settings import ROOT_PATH
 
 eb_thrift = thriftpy.load(os.path.join(ROOT_PATH, "thrift_file/eb.thrift"), module_name="eb_thrift")
 

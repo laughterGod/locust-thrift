@@ -1,4 +1,7 @@
 import thriftpy
+import os
+from settings import ROOT_PATH
+
 eb_thrift = thriftpy.load(os.path.join(ROOT_PATH, "thrift_file/eb.thrift"), module_name="eb_thrift")
 
 from thriftpy.rpc import make_client
